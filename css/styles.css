@@ -10846,3 +10846,67 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+/* --- Muktadhara hero carousel background --- */
+
+header {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+ 
+
+.hero-carousel {
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+}
+
+ 
+
+.hero-carousel .carousel-item {
+
+  height: 100%;
+
+  min-height: 520px;              /* adjust as you like */
+
+  background-size: cover;
+
+  background-position: center;
+
+}
+
+ 
+
+header .container {
+
+  position: relative;
+
+  z-index: 1; /* keeps text above images */
+
+}
+
+ 
+
+/* dark overlay so text is readable */
+
+header::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.55);
+
+  z-index: 0;
+
+}
