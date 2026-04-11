@@ -12675,8 +12675,8 @@ header .container {
 
   position: relative;
 
-  z-index: 1;
-  /* keeps text above images */
+  z-index: 2;
+  /* keeps stext above images */
 
 }
 
@@ -12694,7 +12694,7 @@ header::before {
 
   background: rgba(0, 0, 0, 0.55);
 
-  z-index: 0;
+  z-index: 1;
 
 }
 
