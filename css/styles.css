@@ -12778,3 +12778,33 @@ header.bg-dark.py-5::before {
   padding: 5rem 0;
 
 }
+
+/* Ensure the hero has a stable height during slide transitions */
+header.bg-dark.py-5 .carousel-item {
+
+  min-height: 520px;
+
+}
+
+/* key fix: the item itself must have height*/
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 520px;
+}
+
+/* Optional: smoother animation */
+.hero-carousel .carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+/* arrows should be above overlay too */
+.hero-carousel.carousel-control-prev,
+.hero-carousel.carousel-control-next {
+  z-index: 3;
+}
+
+.carousel-links {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
