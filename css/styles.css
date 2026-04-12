@@ -12798,12 +12798,12 @@ header.bg-dark.py-5 .carousel-item {
 }
 
 /* arrows should be above overlay too */
-.hero-carousel.carousel-control-prev,
-.hero-carousel.carousel-control-next {
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
   z-index: 3;
 }
-3
-.carousel-links {
+
+.carousel-link {
   display: block;
   width: 100%;
   height: 100%;
