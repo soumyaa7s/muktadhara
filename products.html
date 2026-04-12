@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Our Products</h1>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-price">$29.99</div>
+                    <div class="product-description">High quality product description goes here.</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Product 2</div>
+                    <div class="product-price">$39.99</div>
+                    <div class="product-description">High quality product description goes here.</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Product 3</div>
+                    <div class="product-price">$49.99</div>
+                    <div class="product-description">High quality product description goes here.</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
