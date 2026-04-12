@@ -61,82 +61,73 @@
         <!-- Header-->
         <header class="bg-dark py-5">
             <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active" style="background-image:url('assets/img/packet-cheetos.jpg')">
-                        <a class="carousel-link" href="products-snacks.html" aria-label="View Snacks"></a>
-
-                    </div>
-
-                    <div class="carousel-item" style="background-image:url('assets/img/cherry-cookie.jpg')">
-                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
-                    </div>
-
-                    <div class="carousel-item" style="background-image:url('assets/img/jeeera-biscuit.jpg')">
-                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
-                    </div>
-
-                    <div class="carousel-item" style="background-image:url('assets/img/cream-biscuit-heart-pic2.jpg')">
-                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
-
-
-                    </div>
-
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
                 </div>
-
-
-
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image:url('assets/img/packet-cheetos.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">🔥 HOT NEW ARRIVAL!</h3>
+                            <p>Cheetos - The Ultimate Cheese Snack Experience</p>
+                        </div>
+                        <a class="carousel-link" href="products-snacks.html" aria-label="View Snacks"></a>
+                    </div>
+                    <div class="carousel-item" style="background-image:url('assets/img/cherry-cookie.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">⭐ CUSTOMER FAVORITE!</h3>
+                            <p>Cherry Cookies - Sweet, Juicy, Irresistible</p>
+                        </div>
+                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
+                    </div>
+                    <div class="carousel-item" style="background-image:url('assets/img/jeeera-biscuit.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">🌟 TRENDING NOW!</h3>
+                            <p>Jeera Biscuits - Traditional Flavor, Modern Crunch</p>
+                        </div>
+                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
+                    </div>
+                    <div class="carousel-item" style="background-image:url('assets/img/cream-biscuit-heart-pic2.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">💝 LIMITED TIME OFFER!</h3>
+                            <p>Cream Biscuits - Heart-Shaped Love in Every Bite</p>
+                        </div>
+                        <a class="carousel-link" href="products-biscuits.html" aria-label="View Biscuits"></a>
+                    </div>
+                </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
                     <span class="visually-hidden">Previous</span>
-
                 </button>
-
                 <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
                     <span class="visually-hidden">Next</span>
-
                 </button>
-
             </div>
             <div class="container px-5 hero-content">
-
                 <div class="row gx-5 justify-content-center">
-
                     <div class="col-lg-8">
-
                         <div class="text-center my-5">
-
                             <h1 class="display-5 fw-bolder text-white mb-2">Welcome to Muktadhara</h1>
-
                             <p class="lead fw-normal text-white-50 mb-4">
-
                                 Experience the pure taste of India with our handcrafted snacks and biscuits.
-
+                                <br><span class="badge bg-warning text-dark fs-6 mt-2">🏆 India's #1 Snack Brand Since
+                                    2020</span>
                             </p>
-
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="products.html">Explore Our
-                                    Products</a>
-
-                                <a class="btn btn-outline-light btn-lg px-4" href="#features">Why Choose Us</a>
-
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="products.html">
+                                    <i class="bi bi-shop me-2"></i>Explore Our Products
+                                </a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#features">
+                                    <i class="bi bi-star me-2"></i>Why Choose Us
+                                </a>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </header>
 
         <section class="py-4 bg-light">
@@ -221,6 +212,259 @@
             </div>
         </section>
 
+        <!-- New Arrivals Section -->
+        <section class="py-5 bg-warning bg-opacity-10">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bolder text-primary">
+                        <i class="bi bi-fire text-danger me-2"></i>🔥 HOT NEW ARRIVALS!
+                    </h2>
+                    <p class="lead text-muted">Fresh from our kitchen to your plate - discover our latest creations</p>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0 hover-lift">
+                            <div class="badge bg-danger text-white position-absolute"
+                                style="top: 10px; left: 10px; z-index: 1;">NEW</div>
+                            <img class="card-img-top" src="assets/img/packet-cheetos.jpg" alt="Cheetos" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Cheetos Cheese Snacks</h5>
+                                <p class="card-text">Irresistibly crunchy cheese puffs that melt in your mouth!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary fw-bold">₹85</span>
+                                    <a href="products-snacks.html" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0 hover-lift">
+                            <div class="badge bg-danger text-white position-absolute"
+                                style="top: 10px; left: 10px; z-index: 1;">NEW</div>
+                            <img class="card-img-top" src="assets/img/cherry-cookie.jpg" alt="Cherry Cookies" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Cherry Delight Cookies</h5>
+                                <p class="card-text">Sweet cherry-infused cookies with a burst of fruity goodness!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary fw-bold">₹120</span>
+                                    <a href="products-biscuits.html" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0 hover-lift">
+                            <div class="badge bg-danger text-white position-absolute"
+                                style="top: 10px; left: 10px; z-index: 1;">NEW</div>
+                            <img class="card-img-top" src="assets/img/cream-biscuit-heart-pic2.jpg"
+                                alt="Heart Biscuits" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Heart-Shaped Cream Biscuits</h5>
+                                <p class="card-text">Romantic cream biscuits perfect for gifting and celebrations!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-primary fw-bold">₹150</span>
+                                    <a href="products-biscuits.html" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Testimonials -->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bolder text-primary">
+                        <i class="bi bi-chat-quote text-success me-2"></i>What Our Customers Say
+                    </h2>
+                    <p class="lead text-muted">Real reviews from satisfied snack lovers across India</p>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"Muktadhara's Cheetos are absolutely addictive! The cheese flavor
+                                    is perfect and they arrive fresh every time."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-person-circle fs-2 text-muted"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-0">Priya Sharma</h6>
+                                        <small class="text-muted">Mumbai, Maharashtra</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="card-text">"The cherry cookies are heavenly! My kids can't get enough of them.
+                                    Best quality and taste in the market."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-person-circle fs-2 text-muted"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-0">Rajesh Kumar</h6>
+                                        <small class="text-muted">Delhi, NCR</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="card-text">"Fast delivery and excellent packaging. The jeera biscuits remind
+                                    me of my grandmother's homemade treats!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-person-circle fs-2 text-muted"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-0">Anita Patel</h6>
+                                        <small class="text-muted">Ahmedabad, Gujarat</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bolder">Muktadhara by Numbers</h2>
+                    <p class="lead">Trusted by thousands of happy customers across India</p>
+                </div>
+                <div class="row gx-5 text-center">
+                    <div class="col-lg-3 mb-4">
+                        <div class="h1 fw-bolder">50K+</div>
+                        <p class="mb-0">Happy Customers</p>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="h1 fw-bolder">100+</div>
+                        <p class="mb-0">Products Available</p>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="h1 fw-bolder">25+</div>
+                        <p class="mb-0">Cities Served</p>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="h1 fw-bolder">4.8★</div>
+                        <p class="mb-0">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story Section -->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="display-6 fw-bolder text-primary mb-4">
+                            <i class="bi bi-heart text-danger me-2"></i>Our Story
+                        </h2>
+                        <p class="lead mb-4">
+                            Founded in 2020, Muktadhara began as a small family business with a simple mission:
+                            to bring authentic Indian flavors to every household.
+                        </p>
+                        <p class="mb-4">
+                            What started as homemade recipes passed down through generations has now become
+                            India's most loved snack brand. We believe in using only the finest ingredients,
+                            traditional cooking methods, and innovative packaging to deliver freshness and quality.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                    <span>100% Natural Ingredients</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                    <span>No Artificial Colors</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                    <span>Handcrafted Quality</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
+                                    <span>Fresh Daily Production</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-3 shadow" src="assets/img/jeeera-biscuit.jpg" alt="Our Story" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-6 fw-bolder text-primary mb-4">
+                            <i class="bi bi-envelope text-info me-2"></i>Stay Updated!
+                        </h2>
+                        <p class="lead mb-4">
+                            Be the first to know about new arrivals, exclusive offers, and special discounts.
+                            Join our newsletter and never miss out on your favorite snacks!
+                        </p>
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="email" class="form-control form-control-lg"
+                                        placeholder="Enter your email">
+                                    <button class="btn btn-primary btn-lg" type="button">
+                                        <i class="bi bi-send me-2"></i>Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-muted mt-3 small">We respect your privacy. Unsubscribe at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
