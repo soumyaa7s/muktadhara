@@ -12,24 +12,29 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-/* Custom Color Scheme for Muktadhara */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+/* Custom Color Scheme for Muktadhara - Three Soothing Colors */
 :root {
   --primary-color: #FF6B35;
-  /* Warm orange */
+  /* Warm Orange - Main Brand Color */
   --secondary-color: #F7931E;
-  /* Golden orange */
-  --accent-color: #FFD23F;
-  /* Bright yellow */
+  /* Golden Orange - Secondary Accent */
+  --tertiary-color: #FFE5D9;
+  /* Soft Peach Cream - Soothing Background */
   --dark-color: #2D3748;
-  /* Dark gray */
+  /* Dark Gray for text */
   --light-color: #F7FAFC;
-  /* Light gray */
-  --cream-color: #FFF8E1;
-  /* Cream */
+  /* Light Gray */
   --success-color: #48BB78;
   --warning-color: #ED8936;
   --danger-color: #E53E3E;
   --info-color: #4299E1;
+
+  /* Font Families */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Nunito', sans-serif;
 
   /* Override Bootstrap variables */
   --bs-primary: var(--primary-color);
@@ -38,7 +43,7 @@
   --bs-warning: var(--warning-color);
   --bs-danger: var(--danger-color);
   --bs-info: var(--info-color);
-  --bs-light: var(--cream-color);
+  --bs-light: var(--tertiary-color);
   --bs-dark: var(--dark-color);
   --bs-white: #ffffff;
   --bs-gray-100: #F7FAFC;
@@ -62,6 +67,191 @@
   --transition-slow: 0.5s ease;
 }
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --bs-body-bg: #1a1a1a;
+  --bs-body-color: #e0e0e0;
+  --bs-link-color: #ff8c42;
+  --bs-link-hover-color: #ffa366;
+  --dark-color: #e0e0e0;
+  --light-color: #2a2a2a;
+}
+
+[data-theme="dark"] .navbar {
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a) !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #2a2a2a !important;
+  border-color: #404040 !important;
+  color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: #b0b0b0 !important;
+}
+
+[data-theme="dark"] .hero-gradient {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%) !important;
+}
+
+[data-theme="dark"] .banner {
+  background: linear-gradient(135deg, #404040, #505050) !important;
+}
+
+/* Product Card Image Consistency */
+.product-card .card-img-top {
+  height: 250px !important;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Search Bar Styles */
+.search-container {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 25px;
+  background-color: var(--tertiary-color);
+  color: var(--dark-color);
+  font-family: var(--body-font);
+  transition: all var(--transition-normal);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  background-color: white;
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+}
+
+.search-btn:hover {
+  background-color: rgba(255, 107, 53, 0.1);
+  color: var(--secondary-color);
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  transition: all var(--transition-normal);
+  margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(255, 107, 53, 0.1);
+}
+
+.theme-toggle i {
+  transition: transform var(--transition-normal);
+}
+
+[data-theme="dark"] .theme-toggle {
+  border-color: #505050;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(255, 107, 53, 0.2);
+}
+
+/* Product Detail Modal */
+.product-modal .modal-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.product-modal .modal-header {
+  border-bottom: 1px solid var(--tertiary-color);
+  padding: 1.5rem;
+}
+
+.product-modal .modal-body {
+  padding: 1.5rem;
+}
+
+.product-modal .product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-modal .ingredients {
+  background-color: var(--tertiary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.product-modal .ingredients h6 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.product-modal .ingredients ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.product-modal .ingredients li {
+  margin-bottom: 0.25rem;
+  color: var(--dark-color);
+}
+
+[data-theme="dark"] .product-modal .modal-content {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .product-modal .modal-header {
+  border-bottom-color: #404040;
+}
+
+[data-theme="dark"] .product-modal .ingredients {
+  background-color: #3a3a3a;
+}
+
 *,
 *::before,
 *::after {
@@ -76,13 +266,29 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--body-font);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   overflow-x: hidden;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* Brand Name Highlighting */
+.navbar-brand {
+  font-family: var(--heading-font) !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  color: var(--tertiary-color) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Custom Navbar Styles */
@@ -13541,5 +13747,6 @@ header.bg-dark.py-5 .carousel-item {
      . l o a d i n g - o v e r l a y   { 
          d i s p l a y :   n o n e   ! i m p o r t a n t ; 
      } 
- }  
+ } 
+ 
  
