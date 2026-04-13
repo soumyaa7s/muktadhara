@@ -198,10 +198,13 @@
 
 /* Indian-Inspired Background Patterns */
 .indian-pattern-bg {
+  background-color: #FEF6F0;
   background-image:
-    radial-gradient(circle at 25% 25%, rgba(255, 153, 51, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(19, 136, 8, 0.1) 0%, transparent 50%);
-  background-size: 100px 100px;
+    radial-gradient(circle at 20% 80%, rgba(244, 163, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(122, 30, 44, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(244, 163, 0, 0.06) 0%, transparent 40%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .indian-border {
