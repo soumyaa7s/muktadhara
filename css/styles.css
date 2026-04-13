@@ -17,22 +17,20 @@
 
 /* Indian-Inspired Color Scheme for Muktadhara */
 :root {
-  --primary-color: #FF9933;
-  /* Saffron - Traditional Indian color */
-  --secondary-color: #138808;
-  /* Indian Green */
-  --tertiary-color: #FFFFFF;
-  /* Pure White */
-  --accent-color: #000080;
-  /* Navy Blue - Royal Indian color */
-  --warm-orange: #FF6B35;
-  /* For accents */
-  --dark-color: #2D3748;
-  --light-color: #F7FAFC;
-  --success-color: #138808;
-  /* Indian Green */
-  --warning-color: #FF9933;
+  --primary-color: #7A1E2C;
+  /* Deep Maroon - Brand */
+  --secondary-color: #F4A300;
+  /* Saffron - Accent */
+  --tertiary-color: #FFF8F1;
+  /* Cream Background */
+  --accent-color: #F4A300;
   /* Saffron */
+  --warm-orange: #F4A300;
+  --dark-color: #1F2937;
+  /* Neutral Dark */
+  --light-color: #FFF8F1;
+  --success-color: #138808;
+  --warning-color: #F4A300;
   --danger-color: #E53E3E;
   --info-color: #4299E1;
 
@@ -48,6 +46,7 @@
   --bs-danger: var(--danger-color);
   --bs-info: var(--info-color);
   --bs-light: var(--tertiary-color);
+  --bs-dark: var(--dark-color);
   --bs-dark: var(--dark-color);
   --bs-white: #ffffff;
   --bs-gray-100: #F7FAFC;
@@ -690,6 +689,7 @@ h6 {
 
 /* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
+
   /* Better touch targets for mobile */
   .btn {
     min-height: 44px;
@@ -808,13 +808,6 @@ h6 {
   .banner {
     display: none !important;
   }
-}
-
-color: var(--bs-body-color);
-text-align: var(--bs-body-text-align);
-background-color: var(--bs-body-bg);
--webkit-text-size-adjust: 100%;
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 hr {
@@ -13959,4 +13952,61 @@ header.bg-dark.py-5 .carousel-item {
      
 }
 
-     
+     / *   M o b i l e   U X   i m p r o v e m e n t s   * /     @media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .hero-content {
+    padding: 2rem 0;
+  }
+
+  .banner {
+    padding: 0.5rem 0;
+  }
+
+  .banner h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+a:hover {
+  color: var(--bs-primary);
+}

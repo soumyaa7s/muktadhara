@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,581 +7,180 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Muktadhara - Snacks</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column h-100 indian-pattern-bg">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html">
-                    <span class="text-primary fw-bold">Muktadhara</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.jpeg" alt="Muktadhara Logo" height="40" class="me-2">Muktadhara</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <i class="bi bi-house-door me-1"></i>Home
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownProducts" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-grid me-1"></i>Products
-                            </a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownProducts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownProducts">
-                                <li><a class="dropdown-item" href="products.html">
-                                        <i class="bi bi-collection me-2"></i>All Products
-                                    </a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="products-snacks.html">
-                                        <i class="bi bi-bag me-2"></i>Snacks
-                                    </a></li>
-                                <li><a class="dropdown-item" href="products-biscuits.html">
-                                        <i class="bi bi-cookie me-2"></i>Biscuits
-                                    </a></li>
-                                <li><a class="dropdown-item" href="products-cake.html">
-                                        <i class="bi bi-cake me-2"></i>Cakes
-                                    </a></li>
-                                <li><a class="dropdown-item" href="products-others.html">
-                                        <i class="bi bi-star me-2"></i>Specialty
-                                    </a></li>
+                                <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="products-snacks.html">Snacks</a></li>
+                                <li><a class="dropdown-item" href="products-biscuits.html">Biscuits</a></li>
+                                <li><a class="dropdown-item" href="products-cake.html">Cakes</a></li>
+                                <li><a class="dropdown-item" href="products-others.html">Specialty/Others</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">
-                                <i class="bi bi-info-circle me-1"></i>About Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                <i class="bi bi-envelope me-1"></i>Contact
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">
-                                <i class="bi bi-tags me-1"></i>Pricing
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="brand.html">Brand</a></li>
+                        <li class="nav-item"><a class="nav-link" href="policy.html">Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Banner -->
         <div class="banner">
             <div class="container">
-                <h3 class="mb-0">
-                    <i class="bi bi-gift me-2"></i>
-                    Free Delivery on Orders Above ₹500! | Same Day Delivery Available
-                    <i class="bi bi-truck ms-2"></i>
-                </h3>
+                <h3 class="mb-0"><i class="bi bi-gift me-2"></i>Free Delivery on Orders Above ₹500! Same Day Delivery Available<i class="bi bi-truck ms-2"></i></h3>
             </div>
         </div>
-        <!-- Header-->
+
         <header class="hero-gradient py-5">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6 slide-in-left">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-dark mb-2">हमारे स्नैक्स कलेक्शन | Our Snacks Collection</h1>
-                            <p class="lead fw-normal text-muted mb-4">
-                                हमारे क्रिस्पी और स्वादिष्ट स्नैक्स खोजें, जो हर अवसर के लिए परफेक्ट हैं।
-                                क्लासिक चिप्स से लेकर इनोवेटिव ट्विस्ट तक, हमारे पास सबके लिए कुछ न कुछ है।
-                                <br>
-                                <small class="text-primary">Discover our crunchy and flavorful snacks, perfect for any occasion.</small>
-                            </p>
+                            <h1 class="display-5 fw-bolder text-dark mb-2">Our Snacks Collection</h1>
+                            <p class="lead fw-normal text-muted mb-4">Crunchy, flavorful snacks made for every occasion. Browse our favorites and buy with one click.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-light btn-lg px-4 me-sm-3" href="#snacks">
-                                    <i class="bi bi-eye me-2"></i>Explore Snacks
-                                </a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="products.html">
-                                    <i class="bi bi-arrow-left me-2"></i>All Products
-                                </a>
+                                <a class="btn btn-light btn-lg px-4 me-sm-3" href="#snacks"><i class="bi bi-eye me-2"></i>Explore Snacks</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="buy.html"><i class="bi bi-cart3 me-2"></i>Click to Buy</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-5 col-xxl-6 d-none d-xl-block slide-in-right text-center">
-                        <img class="img-fluid rounded-3 my-5 shadow-lg" src="assets/img/crisp-ytwist-snacks.png"
-                            alt="Crisp Y Twist Snacks" />
+                        <img class="img-fluid rounded-3 shadow-lg" src="assets/img/crisp-ytwist-snacks.png" alt="Snacks" />
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Snacks Section -->
         <section class="py-5" id="snacks">
             <div class="container px-5 my-5">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6">
-                        <div class="text-center">
-                            <h2 class="fw-bolder"><i class="bi bi-bag me-2"></i>Snacks</h2>
-                            <p class="lead fw-normal text-muted mb-5">A wide variety of crunchy snacks to satisfy your
-                                cravings</p>
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="fw-bolder"><i class="bi bi-bag me-2"></i>Snacks</h2>
+                        <p class="lead fw-normal text-muted mb-5">Savory and crunchy snacks for everyday indulgence.</p>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/img/crisp-ytwist-snacks.png" alt="Crisp Y Twist Snacks" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Crisp Y Twist Snacks</h5>
+                                <p class="card-text">Twisted savory crisps with bold spices and crunch.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h4 text-primary fw-bold">₹80</span>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/img/doritos-packet-snacks.jpg" alt="Doritos Packet Snacks" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Doritos Packet Snacks</h5>
+                                <p class="card-text">Classic chip taste in a crunchy, shareable pack.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h4 text-primary fw-bold">₹95</span>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="assets/img/packet-cheetos.jpg" alt="Packet Cheetos" />
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">Packet Cheetos</h5>
+                                <p class="card-text">Cheesy, crunchy bites for snack time cravings.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h4 text-primary fw-bold">₹85</span>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0 indian-motif position-relative">
-                            <div class="position-relative">
-                                <img class="card-img-top" src="assets/img/crisp-ytwist-snacks.png"
-                                    alt="Crisp Y Twist Snacks" />
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="crisp-ytwist">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                                <div class="badge bg-success bg-gradient position-absolute" style="top: 10px; left: 10px;">
-                                    Popular</div>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Crisp Y Twist Snacks</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted ms-1">(4.7)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Twisted crispy snacks with a unique Y-shaped design and
-                                    irresistible flavor.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹80</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+crisp+y+twist+snacks"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+crisp+y+twist+snacks" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+crisp+y+twist+snacks"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
                         <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <img class="card-img-top" src="assets/img/doritos-packet-snacks.jpg"
-                                    alt="Doritos Packet Snacks" />
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="doritos">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
+                            <img class="card-img-top" src="assets/img/onion-rings-snacks.jpg" alt="Onion Rings" />
                             <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Doritos Packet Snacks</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <small class="text-muted ms-1">(4.9)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Classic Doritos in convenient packets, perfect for on-the-go
-                                    snacking.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹95</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+doritos+packet+snacks"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+doritos+packet+snacks"
-                                            target="_blank" class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+doritos+packet+snacks"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <img class="card-img-top" src="assets/img/packet-cheetos.jpg" alt="Packet Cheetos" />
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="cheetos">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Packet Cheetos</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted ms-1">(4.6)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Cheesy Cheetos in easy-to-carry packets, crunchy and full of
-                                    flavor.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹85</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+packet+cheetos"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+packet+cheetos" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+packet+cheetos"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="spicy-potato-chips">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Spicy Potato Chips</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted ms-1">(4.4)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Crispy potato chips with a spicy kick, made from fresh potatoes.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="card-title fw-bold">Onion Rings</h5>
+                                <p class="card-text">Crispy onion rings seasoned to perfection.</p>
+                                <div class="d-flex justify-content-between align-items-center">
                                     <span class="h4 text-primary fw-bold">₹70</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+spicy+potato+chips"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+spicy+potato+chips" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+spicy+potato+chips"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-5">
                         <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="salted-peanuts">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
+                            <img class="card-img-top" src="assets/img/masala-mix-snacks.jpg" alt="Masala Mix" />
                             <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Salted Peanuts</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <small class="text-muted ms-1">(4.8)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Premium salted peanuts, roasted to perfection for maximum crunch.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹60</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+salted+peanuts"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+salted+peanuts" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+salted+peanuts"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="cheese-puffs">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Cheese Puffs</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted ms-1">(4.3)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Light and airy cheese puffs, perfect for movie nights and parties.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹75</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+cheese+puffs"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+cheese+puffs" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+cheese+puffs"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="onion-rings">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Onion Rings</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <small class="text-muted ms-1">(4.9)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Crispy onion rings with a savory coating, great as a side or snack.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="card-title fw-bold">Masala Mix</h5>
+                                <p class="card-text">Spiced snack mix with a savory, crunchy finish.</p>
+                                <div class="d-flex justify-content-between align-items-center">
                                     <span class="h4 text-primary fw-bold">₹90</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+onion+rings"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+onion+rings" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+onion+rings"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-5">
                         <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="popcorn-mix">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
+                            <img class="card-img-top" src="assets/img/savory-chips-snacks.jpg" alt="Savory Chips" />
                             <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Popcorn Mix</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                        <small class="text-muted ms-1">(4.2)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Assorted popcorn flavors in one convenient pack for variety lovers.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹55</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+popcorn+mix"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+popcorn+mix" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+popcorn+mix"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="card h-100 shadow border-0">
-                            <div class="position-relative">
-                                <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
-                                    style="height: 200px;">
-                                    <i class="bi bi-image text-muted" style="font-size: 3rem;"></i>
-                                </div>
-                                <button class="btn btn-light like-btn position-absolute" style="top: 10px; right: 10px;"
-                                    data-product="pretzel-sticks">
-                                    <i class="bi bi-heart"></i>
-                                </button>
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="card-title fw-bold">Pretzel Sticks</h5>
-                                    <div class="rating">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <small class="text-muted ms-1">(4.7)</small>
-                                    </div>
-                                </div>
-                                <p class="card-text">Salty pretzel sticks, baked to golden perfection for a classic snack.</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="h4 text-primary fw-bold">₹65</span>
-                                    <button class="btn btn-primary">Add to Cart</button>
-                                </div>
-                                <div class="external-links">
-                                    <small class="text-muted d-block mb-2">Also available on:</small>
-                                    <div class="d-flex gap-2">
-                                        <a href="https://www.flipkart.com/search?q=muktadhara+pretzel+sticks"
-                                            target="_blank" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-shop me-1"></i>Flipkart
-                                        </a>
-                                        <a href="https://blinkit.com/s/?q=muktadhara+pretzel+sticks" target="_blank"
-                                            class="btn btn-outline-success btn-sm">
-                                            <i class="bi bi-lightning me-1"></i>Blinkit
-                                        </a>
-                                        <a href="https://www.zeptonow.com/search?q=muktadhara+pretzel+sticks"
-                                            target="_blank" class="btn btn-outline-info btn-sm">
-                                            <i class="bi bi-truck me-1"></i>Zepto
-                                        </a>
-                                    </div>
+                                <h5 class="card-title fw-bold">Savory Chips</h5>
+                                <p class="card-text">Crunchy potato chips with a perfectly balanced spice blend.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h4 text-primary fw-bold">₹75</span>
+                                    <a class="btn btn-primary" href="buy.html">Click to Buy</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-4">
+                    <a class="btn btn-outline-primary" href="buy.html">Buy All Snacks</a>
+                    <a class="btn btn-outline-primary ms-2" href="products.html">Back to All Products</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Bootstrap core JS-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Muktadhara 2024</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="policy.html">Privacy Policy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
 
