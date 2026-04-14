@@ -689,3 +689,52 @@ document.addEventListener('DOMContentLoaded', function() {
         return stars;
     }
 });
+
+// Product Sorting Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const sortSelect = document.getElementById('sortPrice');
+    
+    if (sortSelect) {
+        sortSelect.addEventListener('change', function() {
+            const sortOption = this.value;
+            const productCards = Array.from(document.querySelectorAll('.row.gx-5 > .col-lg-4'));
+            
+            if (sortOption === 'default') {
+                // Reset to original order (no sorting)
+                productCards.sort((a, b) => {
+                    return a.getAttribute('data-position') - b.getAttribute('data-position');
+                });
+            } else if (sortOption === 'high-to-low') {
+                // Sort by price high to low
+                productCards.sort((a, b) => {
+                    const priceA = parseInt(a.querySelector('.text-primary').textContent.replace('₹', ''));
+                    const priceB = parseInt(b.querySelector('.text-primary').textContent.replace('₹', ''));
+                    return priceB - priceA;
+                });
+                showToast('Sorted by Price: High to Low ↓', 'info');
+            } else if (sortOption === 'low-to-high') {
+                // Sort by price low to high
+                productCards.sort((a, b) => {
+                    const priceA = parseInt(a.querySelector('.text-primary').textContent.replace('₹', ''));
+                    const priceB = parseInt(b.querySelector('.text-primary').textContent.replace('₹', ''));
+                    return priceA - priceB;
+                });
+                showToast('Sorted by Price: Low to High ↑', 'info');
+            }
+            
+            // Re-append cards in new order
+            const container = document.querySelector('.row.gx-5:not(.justify-content-center)');
+            if (container) {
+                productCards.forEach(card => {
+                    container.appendChild(card);
+                });
+            }
+        });
+
+        // Store original positions
+        const productCards = document.querySelectorAll('.row.gx-5 > .col-lg-4');
+        productCards.forEach((card, index) => {
+            card.setAttribute('data-position', index);
+        });
+    }
+});
